@@ -3,8 +3,8 @@
 #str2 = Second String
 #m = length of first
 #n= length of second
-str1 = ARGV[0].gsub(' ','-')
-str2 = ARGV[1].gsub(' ','-')
+str1 = ARGV[0]
+str2 = ARGV[1]
 m = str1.length
 n = str2.length
 def edit_distance_without_dp(str1,str2,m,n)
