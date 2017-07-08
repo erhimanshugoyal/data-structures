@@ -1,5 +1,5 @@
 #Largest Sum Contiguos Array
-arr  = ARGV.map{|a| a.to_i}
+arr  = [[0,1,1,0,1],[0,1,1,1,1],[1,1,1,0,1],[1,1,1,0,1],[0,1,1,1,1]]
 #arr = arr.split()
 def lsca_brute(arr)
 
