@@ -5,7 +5,7 @@ def get_children(n)
 end
 
 def call_children(n,arr)
-  cat_arr = ModelName.where(:parent_id => [n]).collect(&:id)
+  cat_arr = ModelName.where(:parent_id => [n].flatten).collect(&:id)
   cat_arr.delete(nil)
   if cat_arr.blank? 
     return arr.flatten
