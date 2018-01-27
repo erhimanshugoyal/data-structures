@@ -1,0 +1,17 @@
+def get_children(n)
+  arr = [n]
+  arr =  call_children(n,arr.flatten)
+  puts arr.inspect
+end
+
+def call_children(n,arr)
+  cat_arr = ModelName.where(:parent_id => [n].flatten).collect(&:id)
+  cat_arr.delete(nil)
+  if cat_arr.blank? 
+    return arr.flatten
+  else
+    arr << cat_arr
+    call_children(cat_arr.flatten,arr.flatten)
+  end
+end
+
