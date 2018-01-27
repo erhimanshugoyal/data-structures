@@ -1,0 +1,17 @@
+Sorting arranges elements in a certain order.
+
+The output is a permutation of reordering of inputs.
+
+There are ways in which we can classify an alogrtihm:
+
+1. By number of Comparisons -  Counting Sort, BUcket Sort, Radix Sort
+
+2. By number of swaps -
+
+3. BY memory usage
+
+4. By Recursion - Quick Sort
+
+5. By stability 
+
+6. By Adaptability
